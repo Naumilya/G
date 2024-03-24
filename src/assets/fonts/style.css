@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Trade Gothic';
+  src:
+    local('Trade Gothic Bold'),
+    local('Trade-Gothic-Bold'),
+    url('TradeGothicLT-Bold.woff2') format('woff2'),
+    url('TradeGothicLT-Bold.woff') format('woff'),
+    url('TradeGothicLT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic';
+  src:
+    local('Trade Gothic Regular'),
+    local('Trade-Gothic-Regular'),
+    url('TradeGothicLT.woff2') format('woff2'),
+    url('TradeGothicLT.woff') format('woff'),
+    url('TradeGothicLT.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic Extended';
+  src:
+    local('Trade Gothic Extended'),
+    local('Trade-Gothic-Extended'),
+    url('TradeGothicLTStdExtended.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
