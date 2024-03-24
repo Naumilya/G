@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import BaseHeader from '@/layouts/Header/BaseHeader.vue'
+import HomeHeader from '@/layouts/Header/HomeHeader.vue'
 </script>
 
 <template>
   <div class="home">
-    <BaseHeader />
+    <HomeHeader />
     <main>
       <transition name="slide-fade" mode="out-in">
         <router-view v-slot="{ Component }">

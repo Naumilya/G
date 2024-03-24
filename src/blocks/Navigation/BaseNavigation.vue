@@ -16,7 +16,7 @@ const { isWhite } = defineProps<Props>()
         <Icon icon="ion:airplane" height="24px" />
         Find Flights</router-link
       >
-      <router-link to="/" class="navigation__menu-link">
+      <router-link to="/hotels" class="navigation__menu-link">
         <Icon icon="ion:bed" height="24px" />
         Find Stays</router-link
       >

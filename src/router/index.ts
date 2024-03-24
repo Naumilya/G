@@ -1,5 +1,5 @@
 import BaseLayout from '@/layouts/BaseLayout.vue'
-import LandingLayout from '@/layouts/LandingLayout.vue'
+import HomeLayout from '@/layouts/HomeLayout.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      meta: { layout: LandingLayout },
+      meta: { layout: HomeLayout },
       component: HomeView
     },
     {
@@ -17,6 +17,12 @@ const router = createRouter({
       name: 'flights',
       meta: { layout: BaseLayout },
       component: () => import('@/views/FlightsView.vue')
+    },
+    {
+      path: '/hotels',
+      name: 'hotels',
+      meta: { layout: BaseLayout },
+      component: () => import('@/views/HotelsView.vue')
     }
   ]
 })
