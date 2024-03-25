@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <form>[e]</form>
 </template>
 
 <script setup lang="ts"></script>

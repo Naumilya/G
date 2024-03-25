@@ -3,7 +3,7 @@ import BaseHeader from '@/layouts/Header/BaseHeader.vue'
 </script>
 
 <template>
-  <div class="home">
+  <div class="transition">
     <BaseHeader />
     <main>
       <transition name="slide-fade" mode="out-in">
@@ -15,8 +15,4 @@ import BaseHeader from '@/layouts/Header/BaseHeader.vue'
   </div>
 </template>
 
-<style scoped>
-.home {
-  transition: all 0.5s;
-}
-</style>
+<style scoped></style>
