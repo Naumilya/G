@@ -23,7 +23,7 @@ const clickOnTab = (tabName: string) => {
       :class="['tab-nav__item', { selected: tab.title === selectedTab }]"
       @click="clickOnTab(tab.title)"
     >
-      <Icon :icon="tab.icon" />
+      <Icon :icon="tab.icon" :height="24" />
       {{ tab.title }}</span
     >
   </div>
@@ -35,5 +35,20 @@ const clickOnTab = (tabName: string) => {
 <style scoped>
 .selected {
   border-bottom: 3px solid var(--mint-green);
+}
+
+.tab-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.tab-nav span {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 </style>

@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BaseInput from '@/components/input/BaseInput.vue'
+</script>
 
 <template>
-  <form>asdas</form>
+  <form>
+    <BaseInput placeholder="Label" />
+  </form>
 </template>
 
 <style scoped></style>
