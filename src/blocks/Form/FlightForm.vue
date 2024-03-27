@@ -4,7 +4,7 @@ import BaseInput from '@/components/input/BaseInput.vue'
 
 <template>
   <form>
-    <BaseInput placeholder="Label" />
+    <BaseInput placeholder="Lahori - Karache" label="label" support-text="faq" />
   </form>
 </template>
 
