@@ -16,33 +16,35 @@ const clickOnTab = (tabName: string) => {
 </script>
 
 <template>
-  <div class="tab-nav">
-    <span
-      v-for="tab in tabs"
-      :key="tab.title"
-      :class="['tab-nav__item', { selected: tab.title === selectedTab }]"
-      @click="clickOnTab(tab.title)"
-    >
-      <Icon :icon="tab.icon" :height="24" />
-      {{ tab.title }}</span
-    >
-  </div>
-  <div>
-    <slot />
+  <div class="tab">
+    <div class="tab-nav">
+      <span
+        v-for="tab in tabs"
+        :key="tab.title"
+        :class="['tab-nav__item', { selected: tab.title === selectedTab }]"
+        @click="clickOnTab(tab.title)"
+      >
+        <Icon :icon="tab.icon" :height="24" />
+        {{ tab.title }}</span
+      >
+    </div>
+    <div class="tab-content">
+      <transition name="slide-fade" mode="out-in">
+        <slot />
+      </transition>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.selected {
-  border-bottom: 3px solid var(--mint-green);
-}
-
 .tab-nav {
   display: flex;
   gap: 32px;
+  transition: all 0.3s;
 }
 
 .tab-nav span {
+  position: relative;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -50,5 +52,28 @@ const clickOnTab = (tabName: string) => {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding-bottom: 22px;
+  overflow: hidden;
+}
+
+.tab-nav span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--mint-green);
+  transition: width 0.2s ease;
+}
+
+.tab-nav span:hover:before,
+.tab-nav span:focus:before,
+.tab-nav span.selected::before {
+  width: 100%;
+}
+
+.tab-content {
+  margin-top: 48px;
 }
 </style>
