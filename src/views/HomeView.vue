@@ -34,5 +34,6 @@ const changeTab = (tabName: string) => {
   padding: 16px 16px 32px 32px;
   margin-top: -90px;
   border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
 }
 </style>

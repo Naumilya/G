@@ -66,10 +66,20 @@ a {
 }
 
 .navigation__menu-button {
+  outline: none;
   padding: 15.5px 24px;
   background-color: var(--blackish-green);
   color: var(--neutrals);
   border-radius: 8px;
+}
+
+.navigation__menu-button:hover {
+  border-radius: 0px;
+}
+
+.navigation__menu-button:focus {
+  outline: 1px solid var(--blackish-green);
+  outline-offset: 1px;
 }
 
 .white * {
@@ -79,5 +89,8 @@ a {
 .white .navigation__menu-button {
   color: var(--blackish-green);
   background-color: var(--neutrals);
+}
+.white .navigation__menu-button:focus {
+  outline: 1px solid var(--neutrals);
 }
 </style>

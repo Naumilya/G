@@ -5,11 +5,16 @@
 
 /* colors */
 :root {
+  --background: #fafbfc;
   --gray-stroke: #79747e;
   --blackish-green: #112211;
   --mint-green: #8dd3bb;
+  --mint-green-2: #9be0c8;
+  --mint-green-3: #82cbb2;
   --slamon: #ff8682;
   --neutrals: #ffffff;
+  --neutrals-2: #d2d1d3;
+  --neutrals-5: #8f8c91;
 }
 
 .transition {
