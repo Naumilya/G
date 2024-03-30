@@ -1,64 +1,37 @@
-# .
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+# Проект "Globe"
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+"Globe" - это проект, который использует Vue.js в качестве фреймворка и Vite в качестве сборщика проекта. Для запуска проекта используйте команду `npm run dev` в консоли.
 
-## Type Support for `.vue` Imports in TS
+#### Установка и запуск 🎈
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+Для начала работы с проектом, выполните следующие команды в консоли:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Затем, для запуска проекта, используйте команду:
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+#### Поддерживаемые языки 📚
 
-```sh
-npm run build
-```
+Проект использует TypeScript в качестве языка программирования.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+#### Рекомендуемые инструменты разработки 🛠️
 
-```sh
-npm run test:unit
-```
+Для разработки проекта рекомендуется использовать Visual Studio Code (VSCode) и плагин Volar для улучшения поддержки TypeScript и Vue.js. Для этого, необходимо установить VSCode и Volar, а также отключить Vetur, чтобы избежать конфликтов.
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+#### Настройка проекта 🔧
 
-```sh
-# Install browsers for the first run
-npx playwright install
+Для настройки проекта, можно использовать Vite Configuration Reference, доступный по ссылке [Vite Configuration Reference](https://vitejs.dev/config/).
 
-# When testing on CI, must build the project first
-npm run build
+#### Дополнительные сведения 📝
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+Проект использует TypeScript в качестве языка программирования. Для работы с проектом требуется Node.js и npm.
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+By Perplexity at https://www.perplexity.ai/search/858fa71a-7391-419b-9736-c1cd2cdeea02?s=m
