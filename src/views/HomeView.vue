@@ -2,10 +2,12 @@
 import FlightForm from '@/blocks/Form/FlightForm.vue'
 import StayForm from '@/blocks/Form/StayForm.vue'
 import BaseButton from '@/components/button/BaseButton.vue'
+import CardBanner from '@/components/card/CardBanner.vue'
 import CardTrip from '@/components/card/CardTrip.vue'
 import BaseTab from '@/components/tab/BaseTab.vue'
 import Trips from '@/constants/trip'
 import { type Tab } from '@/models/tab.interface'
+import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
 
 const selectedTab = ref<string>('Flights')
@@ -50,6 +52,32 @@ const changeTab = (tabName: string) => {
         />
       </div>
     </section>
+    <section class="banner">
+      <CardBanner background-image="/src/assets/images/flight-banner.jpg">
+        <template v-slot:title>Flights</template>
+        <template v-slot:paragraph>
+          Search Flights & Places Hire to our most popular destinations
+        </template>
+        <BaseButton size="large" type="submit">
+          <template v-slot:left-icon>
+            <Icon icon="ion:paper-plane" />
+          </template>
+          Show Flights
+        </BaseButton>
+      </CardBanner>
+      <CardBanner background-image="/src/assets/images/hotel-banner.jpg">
+        <template v-slot:title>Hotels</template>
+        <template v-slot:paragraph>
+          Search hotels & Places Hire to our most popular destinations
+        </template>
+        <BaseButton size="large" type="submit">
+          <template v-slot:left-icon>
+            <Icon icon="ion:bed" />
+          </template>
+          Show Hotels
+        </BaseButton>
+      </CardBanner>
+    </section>
   </main>
 </template>
 
@@ -84,5 +112,12 @@ const changeTab = (tabName: string) => {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 32px;
+}
+
+.banner {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 </style>
