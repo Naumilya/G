@@ -5,7 +5,7 @@ import HomeHeader from '@/layouts/Header/HomeHeader.vue'
 <template>
   <div class="transition">
     <HomeHeader />
-    <main>
+    <main class="main">
       <transition name="slide-fade" mode="out-in">
         <router-view v-slot="{ Component }">
           <component :is="Component" />
@@ -15,4 +15,8 @@ import HomeHeader from '@/layouts/Header/HomeHeader.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main {
+  /* overflow: hidden; */
+}
+</style>

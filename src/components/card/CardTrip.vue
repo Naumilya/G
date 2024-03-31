@@ -36,10 +36,10 @@ function handleIntersect(entries: IntersectionObserverEntry[]) {
             <router-link :to="`/flights/${id}`">Flights</router-link>
           </li>
           <li>
-            <router-link :to="`/flights/${id}`">Hotels</router-link>
+            <router-link :to="`/hotels/${id}`">Hotels</router-link>
           </li>
           <li>
-            <router-link :to="`/flights/${id}`">Resorts</router-link>
+            <router-link :to="`/resorts/${id}`">Resorts</router-link>
           </li>
         </ul>
       </div>
