@@ -15,6 +15,7 @@
   --neutrals: #ffffff;
   --neutrals-2: #d2d1d3;
   --neutrals-5: #8f8c91;
+  --shadow-card: 0px 4px 16px rgba(17, 34, 17, 0.05);
 }
 
 .transition {

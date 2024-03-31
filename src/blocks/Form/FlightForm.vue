@@ -4,6 +4,11 @@ import BaseInput from '@/components/input/BaseInput.vue'
 import { Icon } from '@iconify/vue'
 
 import BaseButton from '@/components/button/BaseButton.vue'
+import router from '@/router'
+
+const goTo = (link: string) => {
+  router.push(link)
+}
 </script>
 
 <template>
@@ -20,7 +25,7 @@ import BaseButton from '@/components/button/BaseButton.vue'
         Add promo code
       </BaseButton>
 
-      <BaseButton size="large" type="submit">
+      <BaseButton size="large" type="submit" @click.prevent="goTo('/flights')">
         <template v-slot:left-icon>
           <Icon icon="ion:paper-plane" />
         </template>
