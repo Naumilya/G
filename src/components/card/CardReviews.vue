@@ -1,26 +1,27 @@
 <script setup lang="ts">
+import type { Comment } from '@/models/comment.interface.ts'
 import { Icon } from '@iconify/vue'
+
+const { comment } = defineProps<{ comment: Comment }>()
 </script>
 
 <template>
   <div class="review-card">
     <div class="review-content">
-      <h3 class="title">“A real sense of community, nurtured”</h3>
+      <h3 class="title">{{ comment.title }}</h3>
       <p class="comment-text">
-        Really appreciate the help and support from the staff during these tough times. Shoutout to
-        Katie for helping me always, even when I was out of the country. And always available when
-        needed.
+        {{ comment.comment }}
       </p>
       <span class="view-more-button">View more</span>
     </div>
     <div class="user-info">
       <div class="rating">
-        <Icon :height="24" icon="ion:star" v-for="star in 5" :key="star" />
+        <Icon :height="24" icon="ion:star" v-for="star in comment.rating" :key="star" />
       </div>
 
       <div class="user-details">
-        <p>Olga</p>
-        <p>Weave Studios – Kai Tak</p>
+        <p>{{ comment.name }}</p>
+        <p>{{ comment.place }}</p>
       </div>
 
       <div class="google-review">
@@ -29,7 +30,7 @@ import { Icon } from '@iconify/vue'
       </div>
     </div>
 
-    <img src="@/assets/images/comments/comment-1.jpg" alt="comment" />
+    <img :src="comment.pathImage" alt="comment" />
   </div>
 </template>
 

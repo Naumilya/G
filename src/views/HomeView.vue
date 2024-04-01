@@ -6,6 +6,7 @@ import CardBanner from '@/components/card/CardBanner.vue'
 import CardReviews from '@/components/card/CardReviews.vue'
 import CardTrip from '@/components/card/CardTrip.vue'
 import BaseTab from '@/components/tab/BaseTab.vue'
+import Comments from '@/constants/comment'
 import Trips from '@/constants/trip'
 import { type Tab } from '@/models/tab.interface'
 import { Icon } from '@iconify/vue'
@@ -89,7 +90,7 @@ const changeTab = (tabName: string) => {
       </div>
     </div>
     <div class="reviews__content">
-      <CardReviews v-for="item in 5" :key="item" />
+      <CardReviews :comment="item" v-for="item in Comments" :key="item.id" />
     </div>
   </section>
 </template>
