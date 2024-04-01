@@ -8,8 +8,23 @@
   transition: 0.3s;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
 body {
   background-color: var(--background);
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container {

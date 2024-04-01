@@ -4,7 +4,7 @@ import BaseHeader from '@/layouts/Header/BaseHeader.vue'
 </script>
 
 <template>
-  <div class="transition">
+  <div class="transition wrapper">
     <BaseHeader />
     <main>
       <transition name="slide-fade" mode="out-in">
@@ -13,7 +13,7 @@ import BaseHeader from '@/layouts/Header/BaseHeader.vue'
         </router-view>
       </transition>
     </main>
-    <BaseFooter />
+    <BaseFooter class="footer" />
   </div>
 </template>
 

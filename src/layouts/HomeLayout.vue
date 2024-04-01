@@ -4,7 +4,7 @@ import HomeHeader from '@/layouts/Header/HomeHeader.vue'
 </script>
 
 <template>
-  <div class="transition">
+  <div class="transition wrapper">
     <HomeHeader />
     <main class="main">
       <transition name="slide-fade" mode="out-in">
