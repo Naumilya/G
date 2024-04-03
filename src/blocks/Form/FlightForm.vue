@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BaseDropDownInput from '@/components/input/BaseDropDownInput.vue'
 import BaseInput from '@/components/input/BaseInput.vue'
 import { Icon } from '@iconify/vue'
 
@@ -13,9 +12,18 @@ const goTo = (link: string) => {
 
 <template>
   <form>
-    <div>
-      <BaseInput placeholder="Lahori - Karache" label="label" support-text="faq" />
-      <BaseDropDownInput />
+    <div class="form__content">
+      <div class="form__item">
+        <BaseInput placeholder="Lahori - Karache" label="From" />
+        <BaseButton style-type="border-none" size="large">
+          <Icon icon="ion:swap-horizontal" />
+        </BaseButton>
+        <BaseInput placeholder="Lahori - Karache" label="To" />
+      </div>
+      <div class="form__item">
+        <BaseInput class="wh" placeholder="07 Nov 22 - 13 Nov 22" label="Depart- Return" />
+        <BaseInput placeholder="1 Passenger, Economy" label="Passenger - Class" />
+      </div>
     </div>
     <div class="form__buttons">
       <BaseButton size="large" style-type="border-none">
@@ -41,5 +49,21 @@ const goTo = (link: string) => {
   gap: 24px;
   justify-content: end;
   padding: 32px 0;
+}
+
+.form__content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .form__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .wh {
+    width: 350px;
+  }
 }
 </style>
