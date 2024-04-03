@@ -34,4 +34,3 @@ npm run dev
 
 Проект использует TypeScript в качестве языка программирования. Для работы с проектом требуется Node.js и npm.
 
-By Perplexity at https://www.perplexity.ai/search/858fa71a-7391-419b-9736-c1cd2cdeea02?s=m
