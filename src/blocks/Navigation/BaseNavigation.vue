@@ -25,8 +25,8 @@ const { isWhite } = defineProps<Props>()
       <BaseLogo :is-white="isWhite" class="logo" />
     </div>
     <div class="navigation__menu navigation__menu--right">
-      <router-link to="/">Login</router-link>
-      <router-link to="/" class="navigation__menu-button">Sign Up</router-link>
+      <router-link to="/login">Login</router-link>
+      <router-link to="/registration" class="navigation__menu-button">Sign Up</router-link>
     </div>
   </nav>
 </template>
